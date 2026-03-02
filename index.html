@@ -201,11 +201,18 @@
                   url('imagens/hero-web.webp');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      background-attachment: scroll;
       text-align: center;
       color: #ffffff;
     }
 
+    @media (min-width: 1024px) {
+      .hero {
+        padding: 10rem 0;
+        background-attachment: fixed; /* El efecto fijo solo para PC */
+      }
+    }
+    
     .hero-content {
       max-width: 900px;
       margin: 0 auto;
@@ -770,4 +777,5 @@
     })();
   </script>
 </body>
+
 </html>
